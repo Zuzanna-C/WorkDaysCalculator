@@ -1,0 +1,8 @@
+object PlanerDaneF: TPlanerDaneF
+  OldCreateOrder = False
+  Height = 791
+  HorizontalOffset = 1095
+  VerticalOffset = 239
+  Width = 731
+  PPI = 144
+end

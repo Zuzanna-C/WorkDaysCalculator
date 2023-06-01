@@ -1,0 +1,96 @@
+object PlanerDaneF: TPlanerDaneF
+  OldCreateOrder = False
+  Height = 791
+  HorizontalOffset = 1095
+  VerticalOffset = 239
+  Width = 731
+  PPI = 144
+  object ZConn: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    HostName = '192.168.188.11'
+    Port = 5005
+    Database = 'zuzia'
+    User = 'chbjciw'
+    Password = 'kuba!1971'
+    Protocol = 'postgresql'
+    Left = 72
+    Top = 36
+  end
+  object ZQUrlopy: TZQuery
+    Connection = ZConn
+    SQL.Strings = (
+      'SELECT * FROM urlopy'
+    )
+    Params = <>
+    Sequence = ZSUrlopyId
+    SequenceField = 'id'
+    Left = 72
+    Top = 192
+    object ZQUrlopyid: TLongintField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQUrlopyuzytkownik: TStringField
+      FieldKind = fkData
+      FieldName = 'uzytkownik'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 255
+    end
+    object ZQUrlopyilosc_dni: TLongintField
+      FieldKind = fkData
+      FieldName = 'ilosc_dni'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQUrlopypoczatek: TDateField
+      FieldKind = fkData
+      FieldName = 'poczatek'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQUrlopykoniec: TDateField
+      FieldKind = fkData
+      FieldName = 'koniec'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQUrlopyetat: TLongintField
+      FieldKind = fkData
+      FieldName = 'etat'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object ZSUrlopyId: TZSequence
+    Connection = ZConn
+    SequenceName = 'public.urlopy_seq'
+    Left = 228
+    Top = 192
+  end
+end
