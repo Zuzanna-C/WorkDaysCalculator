@@ -1,3 +1,6 @@
-# Obliczanie_dni_roboczych
+# Obliczanie dni roboczych
 
-Jest to program służący do obliczania ilości dni roboczych w podanym zakresie dat. Opiera się on na bibliotece DateUtils.
+Program pozwala na obliczenie ile dni robocznych znajduje się pomiędzy wybranymi przez użytkownika zakresem dat.\
+Uwzględniono Polskie święta narodowe jako dni wolne od pracy.
+
+Program jest napisany w języku Object Pascal, z wykorzystaniem środowiska Lazarus. Stoworzono prostu interfejs użytkownika, aby ułatwić wpisywanie zakresu dat.
