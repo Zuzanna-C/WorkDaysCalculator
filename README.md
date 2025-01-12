@@ -1,6 +1,6 @@
-# Obliczanie dni roboczych
+# Work Days Calculator
 
-Program pozwala na obliczenie ile dni robocznych znajduje się pomiędzy wybranymi przez użytkownika zakresem dat.\
-Uwzględniono Polskie święta narodowe jako dni wolne od pracy.
+The program allows you to calculate how many working days are between the date ranges you have selected.The program allows you to calculate how many working days are between the date ranges you have selected.
+Polish national holidays as public holidays are included.
 
-Program jest napisany w języku Object Pascal, z wykorzystaniem środowiska Lazarus. Stoworzono prostu interfejs użytkownika, aby ułatwić wpisywanie zakresu dat.
+The program is written in Object Pascal, using the Lazarus environment. A simple user interface has been created to make entering the date range easier.
